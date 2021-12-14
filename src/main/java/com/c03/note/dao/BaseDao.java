@@ -34,7 +34,7 @@ public class BaseDao {
                     preparedStatement.setObject(i+1, params.get(i));
                 }
             }
-            // 执行更新，返回受影响的行数
+
             row = preparedStatement.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();
